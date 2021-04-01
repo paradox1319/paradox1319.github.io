@@ -1,0 +1,518 @@
+/* Clear Fix */
+.fs:before, .fs:after {
+    content: "";
+    display: table;
+}
+.fs:after {
+    clear: both;
+}
+/* Style */
+body {
+        background-color: #AD5AA2;
+        transition: 0.5s;
+}
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
+/* clear link */
+.img-center,.center{
+    text-align: center;
+}
+.hobby img {
+    border-radius: 20px;
+}
+a {
+    text-decoration: none;
+    color: #FF4630;
+    font-family: Roboto,Arial;
+}
+nav h1 {
+    font-family: Pacifico,cursive;
+}
+p,a,h3 {
+    font-family: New Tegomin,serif;
+}
+.skill img {
+    background-color: #fff;
+}
+h1 {
+    font-family: Akaya kanadaka,cursive;
+}
+/* for Mobile */
+@media screen and (max-width: 500px){
+nav {
+        position: fixed;
+        z-index: 999;
+        background-color: #19BCFF;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+}
+nav h1{
+        font-size: 20px;
+        float: left;
+        margin: 10 0 10 20;
+}
+.menu {
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: relative;
+    float: right;
+    margin: 10 10 0 10;
+}
+.menu span {
+    background-color: #fff;
+    width: 20px;
+    height: 5px;
+    display: block;
+    margin: 3px;
+    border-radius: 3px;
+}
+.menu1 {
+    position: absolute;
+}
+.menu2 {
+    display: none;
+    position: static;
+    padding: 0;
+    margin: 0;
+}
+/* burger */
+.menu1 span:nth-child(1){
+    transform-origin: 0 0;
+}
+.menu1 span:nth-child(3){
+    transform-origin: 0 0;
+}
+/* */
+.menu1:hover span:nth-child(1){
+    transform: rotate(45deg) translate(3px,-2px);
+}
+.menu1:hover span:nth-child(3){
+    transform: rotate(-45deg) translate(1px,-1px);
+}
+.menu1:hover span:nth-child(2){
+    transform: scale(0);
+}
+.menu1 .satu {
+    transform-origin: 0 0;
+}
+.menu1 .tiga {
+    transform-origin: 0 0;
+}
+/* kedua */
+.menu2 span:nth-child(1){
+    transform-origin: 0 0;
+}
+.menu2 span:nth-child(3){
+    transform-origin: 0 0;
+}
+/* */
+.menu2:hover span:nth-child(1){
+    transform: rotate(45deg) translate(0px,-3px);
+}
+.menu2:hover span:nth-child(3){
+    transform: rotate(-45deg) translate(-2px,1px);
+}
+.menu2:hover span:nth-child(2){
+    transform: scale(0);
+}
+.menu2 .satu {
+    transform-origin: 0 0;
+    transform: rotate(45deg) translate(3px,-2px);
+}
+.menu2 .dua {
+    transform: scale(0);
+}
+.menu2 .tiga {
+    transform-origin: 0 0;
+    transform: rotate(-45deg) translate(1px,-1px);
+}
+.slider {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 80%;
+    height: 100vh;
+    background-color: #19BCFF;
+    display: none;
+    box-sizing: border-box;
+    transform: translateX(100%);
+}
+.slider ul li {
+    padding: 20px;
+    list-style-type: none;
+    font-size:18px;
+}
+.slider ul {
+    margin-top: 90px;
+}
+.slider ul li:hover{
+    text-align: center;
+    background: #24F9FF;
+    color: #fff;
+    padding: 20px 0;
+    border-radius: 30px;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+.slider ul li:hover a {
+    background: none;
+    width: 100%;
+    display: inline-block;
+}
+.slider img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: right;
+    margin: 50 10 0 0;
+}
+.slider img:hover {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    filter: saturate(150%);
+    transform: rotate(360deg);
+    border: solid 1px salmon;
+    transition: 0.8s;
+}
+.slider h1 {
+    font-size: 25px;
+    margin: 50 0 0 20;
+}
+.profile {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    background-color: #0737FF;
+    border-radius: 0px 0px 50px 50px;
+}
+.profile img{
+    width: 80px;
+    height: 80px;
+    margin-top: 55px;
+    border-radius: 50%;
+}
+.profile h1 {
+    font-size: 15px;
+    color: #FF53EF;
+    margin-top: 10px;
+}
+.profile p {
+    color: #fff;
+    text-align: justify;
+    font-size: 18px;
+    margin: 10;
+}
+.img-page1{
+    width: 50%;
+    float: left;
+}
+.img-page2{
+    float: right;
+    width: 50%;
+}
+.hobby {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 50px;
+}
+.sekil img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    margin-right: 15;
+    border-radius: 10px;
+}
+.sekil p{
+    color: #FFF;
+}
+.sekil {
+    padding: 0px;
+    margin-bottom: 10px;
+}
+.skill h1 , .contact h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.hobby, .skill {
+    padding: 50px;
+}
+.hobby h1{
+    margin-bottom: 10px;
+}
+.hobby h3{
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+.hobby img{
+    width: 100px;
+    height: 100px;
+}
+.skill {
+    width: 100%;
+    background-color: #0737FF;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+.contact {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: #fff;
+}
+section {
+    margin-bottom: 20px;
+}
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: ;
+}
+.medsos img{
+    width: 15px;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.contact {
+    padding: 50px;
+}
+.contact h1 {
+    text-align: center;
+}
+/* form */
+.form-group,.form-control {
+    width: 100%;
+    color: #19BCFF;
+    border-bottom: solid 1px #eee;
+}
+.contact form {
+    border: solid 1px #eee;
+}
+input {
+    border: none;
+}
+label {
+    padding: 5px;
+}
+.contact form select{
+    background-color: #fff;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #19BCFF;
+    outline: none;
+    font-family: cursive;
+}
+button:hover {
+    outline: none;
+    border-radius: 20px;
+}
+.form-control {
+    padding: 10px;
+    text-align: center;
+}
+.form-group label {
+    font-size: 12px;
+    width: 40%;
+}
+.form-group input{
+    padding: 10px;
+    width: 60%;
+}
+}
+/* For Tablet */
+@media screen and (min-width: 600px){
+    nav {
+        position: fixed;
+        background-color: #19BCFF;
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+    }
+    nav h1 {
+        font-size: 25px;
+        padding: 25px;
+        width: 30%;
+        display: inline-block;
+        float: left;
+    }
+    .menu {
+        display: none;
+    }
+    .slider {
+        float: left;
+        width: 60%;
+        transform: translateX(0);
+    }
+    .slider h1, .slider img {
+        display: none;
+    }
+    .slider ul {
+        width: 100%;
+        margin: 25px;
+    }
+    .slider ul li {
+        display: inline-block;
+    }
+    .slider ul li a {
+        display: inline-block;
+        padding: 5px;
+    }
+    .slider ul li:hover a {
+        background-color: #24F9FF;
+
+    }
+    .profile {
+        width: 100%;
+        color: #0737FF;
+        box-sizing: border-box;
+        background-color: blue;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+    .profile h1 {
+        font-size: 20px;
+        color: #fff;
+    }
+    .profile img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+    }
+    .profile .left {
+        float: left;
+        text-align: center;
+        width: 60%;
+        margin-top: 120px;
+    }
+    .profile .right {
+        width: 30%;
+        margin-top: 120px;
+        float: right;
+        color: #fff;
+        text-align: center;
+    }
+    .hobby, .skill , .contact {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .hobby h1, .skill h1 , .contact h1 {
+        margin-bottom: 10px;
+    }
+    .hobby img,.skill img,.contact img{
+        width: 60px;
+        height: 60px;
+    }
+    .hobby .img-page1,.hobby .img-page2{
+        width: 50%;
+        float: left;
+    }
+    .skill {
+        background-color: blue;
+        box-sizing: border-box;
+    }
+    .hobby,.contact {
+        background-color: #fff;
+    }
+    .sekil {
+        color: #fff;
+        width: 25%;
+        float: left;
+        font-size: 10px;
+        text-align: left;
+        box-sizing: border-box;
+    }
+    .sekil img {
+        float: left;
+        margin-right: 10px;
+    }
+    .skill p{
+        float: left;
+    }
+    /* form */
+.form-group,.form-control {
+    width: 100%;
+    color: #19BCFF;
+    border-bottom: solid 1px #eee;
+}
+.contact {
+    padding: 80px;
+}
+.contact form {
+    border: solid 1px #eee;
+    width: 90%;
+    margin: auto;
+}
+.skill, .hobby {
+    padding:  80px;
+    box-sizing: border-box;
+}
+input {
+    border: none;
+}
+label {
+    padding: 5px;
+}
+.contact form select{
+    background-color: #fff;
+}
+button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #19BCFF;
+    outline: none;
+    font-family: cursive;
+}
+button:hover {
+    outline: none;
+    border-radius: 20px;
+}
+.form-control {
+    padding: 10px;
+    text-align: center;
+}
+.form-group label {
+    font-size: 12px;
+    width: 40%;
+}
+.form-group input{
+    padding: 10px;
+    width: 60%;
+}
+.medsos img{
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+footer {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+    font-size: 15px;
+    margin-top: 20px;
+    border-radius: ;
+}
+}
