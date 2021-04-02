@@ -63,6 +63,7 @@ nav h1{
     position: relative;
     float: right;
     margin: 20 20 0 0;
+
 }
 .menu span {
     background-color: #fff;
@@ -71,6 +72,7 @@ nav h1{
     display: block;
     margin: 3px;
     border-radius: 3px;
+    Top: 10;
 }
 .menu1 {
     position: absolute;
