@@ -135,7 +135,7 @@ nav h1{
 .slider {
     position: absolute;
     right: 0;
-    z-index: -1;
+    z-index: 3;
     width: 80%;
     height: 100vh;
     background-color: #19BCFF;
