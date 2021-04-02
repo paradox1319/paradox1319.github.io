@@ -54,7 +54,7 @@ nav {
 nav h1{
         font-size: 20px;
         float: left;
-        margin: 10 0 10 20;
+        margin: 20 0 20 20;
 }
 .menu {
     width: 20px;
@@ -62,7 +62,7 @@ nav h1{
     display: block;
     position: relative;
     float: right;
-    margin: 10 10 0 10;
+    margin: 20 20 0 0;
 }
 .menu span {
     background-color: #fff;
