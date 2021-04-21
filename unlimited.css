@@ -11,6 +11,12 @@ body {
         background-color: #AD5AA2;
         transition: 0.5s;
 }
+select {
+    text-align: center;
+}
+.profile img{
+    border: solid 2px #fff;
+}
 * {
     padding: 0;
     margin: 0;
@@ -24,10 +30,52 @@ body {
 .hobby img {
     border-radius: 20px;
 }
+.conme {
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    height: auto;
+    right: 0;
+    left: 0;
+    background-color: #19BCFF;
+    text-align: center;
+    padding: 60px;
+    display: none;
+    box-sizing: border-box;
+}
+.conme h1,h2 {
+    font-size: 15px;
+    margin-bottom: 15;
+    display: block;
+}
+#rem {
+    right: 20;
+    top: 20;
+    position: absolute;
+    font-size: 20;
+}
+#rem:hover {
+    background-color: #fff;
+}
+.tag {
+    width: 80px;
+    background-color: #fff;
+    float: left;
+    border: solid 1px #000;
+}
+.tag img {
+    width: 80;
+    height: 80px;
+    border-radius: 50%;
+}
 a {
     text-decoration: none;
     color: #FF4630;
     font-family: Roboto,Arial;
+}
+a:hover {
+    text-decoration: underline;
+    color: salmon;
 }
 nav h1 {
     font-family: Pacifico,cursive;
@@ -40,6 +88,13 @@ p,a,h3 {
 }
 h1 {
     font-family: Akaya kanadaka,cursive;
+}
+nav h1:hover {
+    text-shadow: 3px 3px salmon;
+}
+.hobby:hover, .portfolio:hover{
+    background-color: salmon;
+    color: #fff;
 }
 /* for Mobile */
 @media screen and (max-width: 500px){
@@ -54,15 +109,20 @@ nav {
 nav h1{
         font-size: 20px;
         float: left;
-        margin: 20 0 20 20;
+        position: relative;
+        top: 15;
+        left: 20;
+        color: #fff;
 }
+
 .menu {
     width: 20px;
     height: 20px;
     display: block;
     position: relative;
     float: right;
-    margin: 20 20 0 0;
+    top: 10;
+    right: 20;
 
 }
 .menu span {
@@ -137,7 +197,7 @@ nav h1{
 .slider {
     position: absolute;
     right: 0;
-    z-index: 3;
+    z-index: -1;
     width: 80%;
     height: 100vh;
     background-color: #19BCFF;
@@ -151,7 +211,7 @@ nav h1{
     font-size:18px;
 }
 .slider ul {
-    margin-top: 90px;
+    margin-top: 10px;
 }
 .slider ul li:hover{
     text-align: center;
@@ -173,16 +233,6 @@ nav h1{
     border-radius: 50%;
     float: right;
     margin: 50 10 0 0;
-}
-.slider img:hover {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    right: 0;
-    filter: saturate(150%);
-    transform: rotate(360deg);
-    border: solid 1px salmon;
-    transition: 0.8s;
 }
 .slider h1 {
     font-size: 25px;
@@ -260,15 +310,44 @@ nav h1{
 }
 .skill {
     width: 100%;
+    padding: 50px;
     background-color: #0737FF;
     box-sizing: border-box;
     border-radius: 50px;
+}
+.portfolio {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: border-box;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 50px 0px;
+}
+.portfolio h1 {
+    margin-bottom: 10;
+}
+.portfolio .items{
+    width: 200px;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.items:hover img, .items:hover {
+    background-color: yellow;
+    filter: saturate(150%);
+}
+.items img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: solid 3px #555;
 }
 .contact {
     width: 100%;
     box-sizing: border-box;
     border-radius: 50px;
-    background-color: #fff;
+    background-color: #0737FF;
 }
 section {
     margin-bottom: 20px;
@@ -281,7 +360,7 @@ footer {
     color: #fff;
     font-size: 15px;
     margin-top: 20px;
-    border-radius: ;
+    border-radius: 0px;
 }
 .medsos img{
     width: 15px;
@@ -298,25 +377,26 @@ footer {
 /* form */
 .form-group,.form-control {
     width: 100%;
-    color: #19BCFF;
+    color: salmon;
     border-bottom: solid 1px #eee;
 }
 .contact form {
     border: solid 1px #eee;
 }
-input {
+input,textarea {
     border: none;
+    background-color: #0737FF;
 }
 label {
     padding: 5px;
 }
 .contact form select{
-    background-color: #fff;
+    background-color: #0737FF;
 }
 button {
     padding: 10px;
     margin-top: 10px;
-    background-color: #19BCFF;
+    background-color: salmon;
     outline: none;
     font-family: cursive;
 }
@@ -336,6 +416,9 @@ button:hover {
     padding: 10px;
     width: 60%;
 }
+#sider2 {
+    display: none;
+}
 }
 /* For Tablet */
 @media screen and (min-width: 600px){
@@ -344,22 +427,33 @@ button:hover {
         background-color: #19BCFF;
         width: 100%;
         height: 80px;
+        z-index: 999;
         box-sizing: border-box;
     }
     nav h1 {
         font-size: 25px;
         padding: 25px;
-        width: 30%;
+        width: 25%;
         display: inline-block;
         float: left;
+        color: #fff;
+    }
+    .hobby h3{
+    font-size: 15px;
+    margin-bottom: 10px;
     }
     .menu {
         display: none;
     }
     .slider {
         float: left;
-        width: 60%;
-        transform: translateX(0);
+        width: 65%;
+        transform: translateX(0%);
+    }
+    #sider {
+        transform: translateX(-500%);
+        display: none;
+        background-color: #000;
     }
     .slider h1, .slider img {
         display: none;
@@ -432,7 +526,7 @@ button:hover {
         background-color: blue;
         box-sizing: border-box;
     }
-    .hobby,.contact {
+    .hobby,.portfolio {
         background-color: #fff;
     }
     .sekil {
@@ -453,11 +547,12 @@ button:hover {
     /* form */
 .form-group,.form-control {
     width: 100%;
-    color: #19BCFF;
+    color: salmon;
     border-bottom: solid 1px #eee;
 }
 .contact {
     padding: 80px;
+    background-color: #0737FF;
 }
 .contact form {
     border: solid 1px #eee;
@@ -468,19 +563,20 @@ button:hover {
     padding:  80px;
     box-sizing: border-box;
 }
-input {
+input,textarea,label {
     border: none;
+    background-color: #0737FF;
 }
 label {
     padding: 5px;
 }
 .contact form select{
-    background-color: #fff;
+    background-color: #0737FF;
 }
 button {
     padding: 10px;
     margin-top: 10px;
-    background-color: #19BCFF;
+    background-color:salmon;
     outline: none;
     font-family: cursive;
 }
@@ -506,6 +602,43 @@ button:hover {
     height: 15px;
     background-color: #eee;
     border-radius: 50%;
+}
+.hobby:hover, .portfolio:hover{
+    background-color: salmon;
+    color: #fff;
+}
+.portfolio {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 80px 0px;
+    align-items: center;
+}
+.portfolio h1 {
+    margin-bottom: 10;
+    width: 100%;
+}
+.portfolio .items{
+    width: 200px;
+    height: 150px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    float: left;
+    box-sizing: border-box;
+}
+.items:hover img, .items:hover {
+    background-color: yellow;
+    filter: saturate(150%);
+    z-index: 1;
+    position: relative;
+}
+.items img {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    border: solid 3px #555;
 }
 footer {
     width: 100%;
