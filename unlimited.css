@@ -6,16 +6,30 @@
 .fs:after {
     clear: both;
 }
+.sekil img {
+  margin-right: 10px; 
+}
+.pj {
+  width: 105%;
+  text-align: center;
+  
+}
 /* Style */
+#bingkai {
+  position: relative;
+}
+#bingkai img{
+  border-top: 3px solid red;
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid red;
+}
 body {
         background-color: #AD5AA2;
         transition: 0.5s;
 }
 select {
     text-align: center;
-}
-.profile img{
-    border: solid 2px #fff;
 }
 * {
     padding: 0;
@@ -30,37 +44,12 @@ select {
 .hobby img {
     border-radius: 20px;
 }
-.conme {
-    position: absolute;
-    z-index: 999;
-    top: 100px;
-    height: auto;
-    right: 0;
-    left: 0;
-    background-color: #19BCFF;
-    text-align: center;
-    padding: 60px;
-    display: none;
-    box-sizing: border-box;
-}
-.conme h1,h2 {
-    font-size: 15px;
-    margin-bottom: 15;
-    display: block;
-}
-#rem {
-    right: 20;
-    top: 20;
-    position: absolute;
-    font-size: 20;
-}
 #rem:hover {
     background-color: #fff;
 }
 .tag {
     width: 80px;
     background-color: #fff;
-    float: left;
     border: solid 1px #000;
 }
 .tag img {
@@ -68,6 +57,7 @@ select {
     height: 80px;
     border-radius: 50%;
 }
+
 a {
     text-decoration: none;
     color: #FF4630;
@@ -76,6 +66,10 @@ a {
 a:hover {
     text-decoration: underline;
     color: salmon;
+}
+.tag h1 {
+  font-family: sans-serif;
+  margin: 0px 5px;
 }
 nav h1 {
     font-family: Pacifico,cursive;
@@ -98,6 +92,10 @@ nav h1:hover {
 }
 /* for Mobile */
 @media screen and (max-width: 500px){
+#sider {
+       opacity: 0;
+       display: block;
+}
 nav {
         position: fixed;
         z-index: 9999;
@@ -105,6 +103,7 @@ nav {
         width: 100%;
         height: 50px;
         box-sizing: border-box;
+        padding: 10px;
 }
 nav h1{
         font-size: 20px;
@@ -113,8 +112,33 @@ nav h1{
         top: 15;
         left: 20;
         color: #fff;
+        z-index: -3
 }
-
+.conme {
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    height: auto;
+    right: 0;
+    left: 0;
+    background-color: #19BCFF;
+    text-align: center;
+    padding: 60px;
+    display: none;
+    box-sizing: border-box;
+}
+ .conme .tag {
+   display: inline-block;
+ }
+.conme h1,h2 {
+    font-size: 15px;
+    margin-bottom: 15px;
+    display: block;
+}
+#rem {
+  position: absolute;
+  right: 20px;
+}
 .menu {
     width: 20px;
     height: 20px;
@@ -205,10 +229,14 @@ nav h1{
     box-sizing: border-box;
     transform: translateX(100%);
 }
+.slider ul li:nth-child(1) {
+  border-top: solid 1px black;
+}
 .slider ul li {
     padding: 20px;
     list-style-type: none;
     font-size:18px;
+    border-bottom: solid 1px black;
 }
 .slider ul {
     margin-top: 10px;
@@ -220,7 +248,10 @@ nav h1{
     padding: 20px 0;
     border-radius: 30px;
     transition: 0.3s;
+    position: relative;
+    box-shadow: 0px 0px 20px black;
     box-sizing: border-box;
+    border: solid .5px #FF6D6D;
 }
 .slider ul li:hover a {
     background: none;
@@ -234,9 +265,8 @@ nav h1{
     float: right;
     margin: 50 10 0 0;
 }
-.slider h1 {
-    font-size: 25px;
-    margin: 50 0 0 20;
+.top-nav {
+  margin-bottom: 50px
 }
 .profile {
     width: 100%;
@@ -261,6 +291,12 @@ nav h1{
     text-align: justify;
     font-size: 18px;
     margin: 10;
+}
+#region {
+  position: absolute;
+  left: 53%;
+  bottom: -10px;
+  font-size: 30px;
 }
 .img-page1{
     width: 50%;
@@ -325,23 +361,29 @@ nav h1{
     padding: 50px 0px;
 }
 .portfolio h1 {
-    margin-bottom: 10;
+    margin-bottom: 10px;
 }
 .portfolio .items{
-    width: 200px;
-    height: 150px;
+    width: 55%;
+    height: 300px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    border: solid 3px #555;
 }
-.items:hover img, .items:hover {
-    background-color: yellow;
+.items a {
+    color: #00D460;
+}
+.items a:hover {
+    color: skyblue;
+}
+.items:hover, .item img:hover{
+    background-color: #4720FF;
     filter: saturate(150%);
 }
 .items img {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 80%;
     padding: 5px;
-    border: solid 3px #555;
 }
 .contact {
     width: 100%;
@@ -375,16 +417,21 @@ footer {
     text-align: center;
 }
 /* form */
-.form-group,.form-control {
+form {
     width: 100%;
+    box-sizing: border-box;
+}
+.form-group,.form-control {
+    width: 95%;
     color: salmon;
-    border-bottom: solid 1px #eee;
 }
 .contact form {
     border: solid 1px #eee;
 }
-input,textarea {
-    border: none;
+textarea {
+    background-color: #0737FF;
+}
+input {
     background-color: #0737FF;
 }
 label {
@@ -434,7 +481,6 @@ button:hover {
         font-size: 25px;
         padding: 25px;
         width: 25%;
-        display: inline-block;
         float: left;
         color: #fff;
     }
@@ -444,6 +490,37 @@ button:hover {
     }
     .menu {
         display: none;
+    }
+    .conme {
+    position: absolute;
+    z-index: 999;
+    top: 100px;
+    height: 100%;
+    right: 0;
+    left: 0;
+    background-color: #02B1FFF2;
+    text-align: center;
+    padding: 60px;
+    display: none;
+    box-sizing: border-box;
+    }
+    #rem {
+      position: absolute;
+      right: 10%;
+      font-size: 30px;
+    }
+    .tag {
+      display: inline-block;
+      width: auto;
+    }
+    .tag h1 {
+      font-size: 15px;
+    }
+    .conme h1,.conme h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    display: block;
+    margin-top: 10px;
     }
     .slider {
         float: left;
@@ -504,6 +581,13 @@ button:hover {
         color: #fff;
         text-align: center;
     }
+    #region {
+         position: absolute;
+         left: 53%;
+         bottom: 10px;
+         font-size: 30px;
+    }
+　
     .hobby, .skill , .contact {
         width: 100%;
         text-align: center;
@@ -524,10 +608,33 @@ button:hover {
     }
     .skill {
         background-color: blue;
-        box-sizing: border-box;
+        box-sizing: border-box; 
     }
     .hobby,.portfolio {
         background-color: #fff;
+    }
+    .jsection {
+      margin-bottom: 30px;
+    }
+    .pj {
+      display: none;
+    }
+    .items:hover {
+      position: relative;
+    }
+     .items:hover img{
+       position: absolute;
+       z-index: 1;
+     }
+    .items:hover .pj {
+      z-index: 9999;
+      position: absolute;
+      text-align: center;
+      display: block;
+      background-color: yellow;
+      left: 0;
+      right: 0;
+      width: 108%;
     }
     .sekil {
         color: #fff;
@@ -546,7 +653,7 @@ button:hover {
     }
     /* form */
 .form-group,.form-control {
-    width: 100%;
+    width: 90%;
     color: salmon;
     border-bottom: solid 1px #eee;
 }
@@ -648,6 +755,8 @@ footer {
     color: #fff;
     font-size: 15px;
     margin-top: 20px;
-    border-radius: ;
 }
 }
+/* disable copy paste */
+* {
+  -webkit-touch-callout: none; /* ilS Safari */  -webkit-user-select: none; /* Safari */  -khtml-user-select: none; /* Konqueror HTML */  -moz-user-select: none; /* Old versions of Firefox */  -ms-user-select: none; /* Internet Explorer/Edge */  user-select: none; /* Non-prefixed version, currently supported by Chrome, Opera and Firefox */}
