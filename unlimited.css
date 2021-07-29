@@ -26,7 +26,6 @@
 }
 body {
         background-color: #AD5AA2;
-        transition: 0.5s;
 }
 select {
     text-align: center;
@@ -36,6 +35,7 @@ select {
     margin: 0;
     border: 0;
     outline: 0;
+    transition: 0.5s;
 }
 /* clear link */
 .img-center,.center{
@@ -587,7 +587,6 @@ button:hover {
          bottom: 10px;
          font-size: 30px;
     }
-　
     .hobby, .skill , .contact {
         width: 100%;
         text-align: center;
@@ -603,7 +602,7 @@ button:hover {
         height: 60px;
     }
     .hobby .img-page1,.hobby .img-page2{
-        width: 50%;
+        width: 48%;
         float: left;
     }
     .skill {
@@ -612,6 +611,9 @@ button:hover {
     }
     .hobby,.portfolio {
         background-color: #fff;
+    }
+    .hobby img{
+      text-align: center;
     }
     .jsection {
       margin-bottom: 30px;
