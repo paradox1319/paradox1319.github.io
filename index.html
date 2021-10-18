@@ -13,13 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=New+Tegomin&display=swap" rel="stylesheet">
     <!-- icon -->
     <link rel="icon" href="img/gw.jpg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.bundle.min.css" type="text/css" media="all" />
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-
+ <div class="darkMode moon animate__animated animate__shakeY animate__repeat-100"><p class="des">Darkmode</p></div>
     <nav class="fs" id="navs">
-        <h1>Aditia Akbar</h1>
+        <h1 class="animate__animated animate__jello animate__infinite">Fian</h1>
         <div class="menu">
-            <div class="menu1" id="menu1">
+            <div class="menu1 animate__animated animate__fadeInRight" id="menu1">
                 <span class="satu"></span>
                 <span class="dua"></span>
                 <span class="tiga"></span>
@@ -43,11 +46,11 @@
     </div>
         <div class="slider fs">
         <ul id="mobile-nav" class="fs">
-            <li><a href="#profile">My Profile</a></li>
-            <li><a href="#hobby">My Hobby</a></li>
-            <li><a href="#skill">My Skills</a></li>
-            <li><a href="#portfolio">My Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <a href="#profile"><li>My Profile</li></a>
+            <a href="#hobby"><li>My Hobby</li></a>
+            <a href="#skill"><li>My Skills</li></a>
+            <a href="#portfolio"><li>My Portfolio</li></a>
+            <a href="#contact"><li>Contact</li></a>
         </ul>
     </nav>
         <div class="conme fs" id="conme">
@@ -75,16 +78,16 @@
     </div>
     <div class="container fs">
 
-        <section class="profile fs" id="profile">
+        <section class="profile zebra fs" id="profile">
             <div class="left fs">
               <div id="bingkai">
               <img id="foto" src="img/gw.jpg">
-              <p id="region">🇮🇩</p>
+              <p id="region" class="animate__animated animate__tada animate__infinite">🇮🇩</p>
              </div>
-            <h1>Programmer | Gamer | Developer</h1>
+            <h1 id="tagDiary" class="animate__animated animate__tada animate__delay-1s">Programmer | Gamer | Student</h1>
             </div>
             <div class="right fs">
-              <p style="">Hi Semuanya, Nama Aku <a id="call_conme">Fian</a> saya Sekarang Berusia <a href="" id="age" style="opacity: 0;">00</a> Tahun, ini adalah PortFolio Aku silahkan di lihat Yaa..</p>
+              <p style="">Hi Semuanya, Perkenalkan Saya <a id="call_conme">Fian</a> saya Sekarang Berusia <a href="" id="age" style="opacity: 0;">00</a> Tahun, Saya berasal dari jawa, ini adalah PortFolio Aku silahkan di lihat...</p>
             </div>
         </section>
         <section class="hobby fs" id="hobby">
@@ -107,7 +110,7 @@
             </div>
         </section>
         
-        <section id="skill" class="skill fs">
+        <section id="skill" class="skill fs zebra">
             <h1 class="jsection">My Skills</h1>
             <div class="sekil fs">
                 <img src="img/html.jpg">
@@ -131,62 +134,58 @@
             <h1 class="fs jsection">My portfolio</h1>
             <div class="items">
              <div class="pj">
-                 <a href="#"><h1>Kalkulator</h1></a>
+                 <a href="https://gchan1319.github.io/Kalkulator"><h1>Kalkulator</h1></a>
              </div>
              <img src="img/kalku.jpg" alt="kalku" />
            </div>
             <div class="items">
               <div class="pj">
-               <a class="" href="#"><h1>Copas Font</h1></a>
+               <a class="" href="https://gchan1319.github.io/copas-font"><h1>Copas Font</h1></a>
              </div>
                 <img src="img/copas.jpg">
             </div>
             <div class="items">
               <div class="pj">
-                <a href="#"><h1>Stop Watch</h1></a>
+                <a href="https://gchan1319.github.io/Stop-Watch"><h1>Stop Watch</h1></a>
               </div>
                 <img src="img/stopwatch.jpg">
             </div>
             <div class="items">
              <div class="pj">
-               <a class="" href=""><h1>undifined</h1></a>
+               <a class="#" href=""><h1>undifined</h1></a>
              </div>
                 <img src="img/0.jpg">
             </div>
             <div class="items">
              <div class="pj">
-               <a class="" href="#"><h1>WA Bot</h1></a>
+               <a class="#" href="#"><h1>WA Bot</h1></a>
              </div>
                 <img src="img/wabot.jpg">
             </div>
             <div class="items">
              <div class="pj">
-               <a class="" href=""><h1>undifined</h1></a>
+               <a class="#" href=""><h1>undifined</h1></a>
              </div>
                 <img src="img/0.jpg">
             </div>
             <div class="items">
              <div class="pj">
-               <a class="" href="#"><h1>undifined</h1></a>
+               <a class="#" href="#"><h1>undifined</h1></a>
              </div>
                 <img src="img/0.jpg">
             </div>
             <div class="items">
              <div class="pj">
-               <a class="" href="#"><h1>undifined</h1></a>
+               <a class="#" href="#"><h1>undifined</h1></a>
              </div>
                 <img src="img/0.jpg">
             </div>
-
-
-
-
         </section>
         
         
-        <section id="contact" class="contact">
+        <section id="contact" class="contact zebra">
             <h1>contact</h1>
-            <form>
+            <form action="" method="">
               <div class="form-group">
                 <label for="nama">Nama :</label>
                 <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
@@ -208,8 +207,8 @@
                 <label for="pesan">Pesan :</label>
                 <textarea class="form-control" rows="10" placeholder="masukkan pesan"></textarea>
               </div>
+              <button type="submit" onclick="tes()">Kirim Pesan</button>
             </form>
-            <button type="submit" onclick="tes()">Kirim Pesan</button>
         </section>
         
         
@@ -219,15 +218,14 @@
            <a href="https://facebook.com"><img src="img/wa-black.png"></a>
            <a href="https://facebook.com"><img src="img/ig-black.png"></a>
         </div>
-            <p>&copy; <T></T> By <a href="https://github.com/Mr-ParadoX-13">Aditia Akbar</a></p>
+            <p>&copy; <T></T> By <a href="https://github.com/Mr-ParadoX-13">Fian</a></p>
             </footer>
     </div>
+    <script src="jquery-3.6.0.min.js"></script>
     <script src="unlimited.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.1.1.min.js"></script>
-    <script src="js/jquery.easing.1.3.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="lazyLoad.js" type="text/javascript" charset="utf-8"></script>
 </body>
  </html>
